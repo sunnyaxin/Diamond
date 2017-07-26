@@ -15,9 +15,10 @@ public class IsoscelesTriangleTest {
 
     @Test
     public void test_draw_isosceles_when_n_3() throws Exception {
-        assertEquals(Arrays.asList("  *  ",
-                                        " *** ",
-                                        "*****"),
+        assertEquals(Arrays.asList(
+                "  *  ",
+                " *** ",
+                "*****"),
                 isoscelesTriangle.drawIsosceles(3));
     }
 }

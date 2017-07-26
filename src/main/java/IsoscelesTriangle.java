@@ -13,7 +13,7 @@ class IsoscelesTriangle {
         return list;
     }
 
-    private String generateLine(int n, int line) {
+    String generateLine(int n, int line) {
         return generateBlank(n, line) +
                 generateStar(line) +
                 generateBlank(n, line);
