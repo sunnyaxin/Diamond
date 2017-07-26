@@ -13,4 +13,10 @@ class Diamond {
         }
         return list;
     }
+
+    List<String> diamondName(int n) {
+        List<String> list = diamond(n);
+        list.set(n-1, "Sunny");
+        return list;
+    }
 }

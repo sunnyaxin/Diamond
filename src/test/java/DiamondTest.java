@@ -30,4 +30,27 @@ public class DiamondTest {
                 " *** ",
                 "  *  "), diamond.diamond(3));
     }
+
+    @Test
+    public void test_diamond_name_when_n_1() throws Exception {
+        assertEquals(Collections.singletonList("Sunny"), diamond.diamondName(1));
+    }
+
+    @Test
+    public void test_diamond_name_when_n_2() throws Exception {
+        assertEquals(Arrays.asList(
+                " * ",
+                "Sunny",
+                " * "), diamond.diamondName(2));
+    }
+
+    @Test
+    public void test_diamond_name_when_n_3() throws Exception {
+        assertEquals(Arrays.asList(
+                "  *  ",
+                " *** ",
+                "Sunny",
+                " *** ",
+                "  *  "), diamond.diamondName(3));
+    }
 }
